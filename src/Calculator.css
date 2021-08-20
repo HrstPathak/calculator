@@ -123,11 +123,34 @@ table {
 }
 @media only screen and (max-width: 430px) {
   .container {
-    width: 250px;
+    width: 355px;
   }
   .heading {
     letter-spacing: 4px;
+    font-size: 2.5rem;
+  }
+  .advance_button {
     font-size: 2.2rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .num_button {
+    font-size: 2.3rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .input-container {
+    width: 20rem;
+    height: 6rem;
+  }
+  #Equals {
+    width: 20rem;
+    height: 5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  #inputBox2 {
+    font-size: 2.5rem;
   }
 }
 @media only screen and (max-width: 320px) {
