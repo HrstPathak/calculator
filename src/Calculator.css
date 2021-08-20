@@ -89,7 +89,6 @@ body {
 }
 #Equals {
   position: relative;
-  left: 20vw;
   border: none;
   border-bottom: 4px solid black;
   border-right: 2px solid black;
@@ -115,9 +114,7 @@ body {
 .num_button_2 {
   background-color: yellow;
 }
-table {
-  padding: 0px 20vw;
-}
+
 .Bracket {
   background-color: purple;
 }
