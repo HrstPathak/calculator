@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <link rel="stylesheet" type="text/css" href="./src/Calculator.css" />
+
+  <body>
+    <heading class="heading"
+      >CALC<i class="fas fa-calculator"></i>LATOR</heading
+    >
+    <div class="container">
+      <div class="input-container">
+        <input
+          id="inputBox1"
+          type="text"
+          readonly="readonly"
+          placeholder="--"
+          onclick="InputBox1()"
+        />
+        <input id="inputBox2" type="text" placeholder="0" />
+      </div>
+      <div class="button-container">
+        <table>
+          <tr>
+            <td>
+              <button
+                id="clear"
+                class="advance_button"
+                type="button"
+                onclick="Clear()"
+                title="Clear All"
+              >
+                <i class="fab fa-cuttlefish"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                id="back"
+                class="advance_button"
+                type="button"
+                onclick="Back()"
+                title="Back"
+              >
+                <i class="fas fa-backspace"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                id="left_Bracket"
+                class="advance_button"
+                type="button"
+                onclick="button_click('(')"
+                title="Left Bracket"
+              >
+                (
+              </button>
+            </td>
+            <td>
+              <button
+                id="right_Bracket"
+                class="advance_button"
+                type="button"
+                onclick="button_click(')')"
+                title="Left Bracket"
+              >
+                )
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="7"
+                onclick="button_click('7')"
+              />
+            </td>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="8"
+                onclick="button_click('8')"
+              />
+            </td>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="9"
+                onclick="button_click('9')"
+              />
+            </td>
+            <td>
+              <button
+                id="divide"
+                class="advance_button"
+                type="button"
+                onclick="button_click('/')"
+                title="Divide"
+              >
+                <i class="fas fa-divide"></i>
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="4"
+                onclick="button_click('4')"
+              />
+            </td>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="5"
+                onclick="button_click('5')"
+              />
+            </td>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="6"
+                onclick="button_click('6')"
+              />
+            </td>
+            <td>
+              <button
+                id="multiply"
+                class="advance_button"
+                type="button"
+                onclick="button_click('*')"
+                title="Multiply"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="1"
+                onclick="button_click('1')"
+              />
+            </td>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="2"
+                onclick="button_click('2')"
+              />
+            </td>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="3"
+                onclick="button_click('3')"
+              />
+            </td>
+            <td>
+              <button
+                id="subtract"
+                class="advance_button"
+                type="button"
+                onclick="button_click('-')"
+                title="Subtract"
+              >
+                <i class="fas fa-minus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="00"
+                onclick="button_click('00')"
+              />
+            </td>
+            <td>
+              <input
+                class="num_button"
+                type="button"
+                value="0"
+                onclick="button_click('0')"
+              />
+            </td>
+            <td>
+              <button
+                class="num_button"
+                type="button"
+                onclick="button_click('.')"
+                style="font-size: 8px"
+              >
+                <i class="fas fa-circle"></i>
+              </button>
+            </td>
+            <td>
+              <button
+                id="add"
+                class="advance_button"
+                type="button"
+                onclick="button_click('+')"
+                title="Addition"
+              >
+                <i class="fas fa-plus"></i>
+              </button>
+            </td>
+          </tr>
+        </table>
+        <button type="button" title="Equals" onclick="EqualsTo()" id="Equals">
+          <i class="fas fa-equals"></i>
+        </button>
+      </div>
+    </div>
+    <script src="./src/Calculator.js"></script>
+  </body>
+</html>
